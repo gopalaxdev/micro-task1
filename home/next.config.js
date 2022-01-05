@@ -11,7 +11,7 @@ module.exports = {
       },
       {
         source: '/task',
-        destination: `${TASK_URL}/task`,
+        destination: `${TASK_URL}/`,
       },
     ]
   },
