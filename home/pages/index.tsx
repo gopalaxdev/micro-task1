@@ -1,11 +1,22 @@
 import type { NextPage } from 'next'
-import Head from 'next/head'
+import Link from 'next/link'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 
 const Home: NextPage = () => {
   return (
-    <div>Home Page</div>
+    <div>
+    <p>This is our homepage</p>
+    <div>
+      <a href="/task">Task</a>
+    </div>
+    <Image
+      src="/static/nextjs.png"
+      alt="Next.js logo"
+      width={200}
+      height={160}
+    />
+    </div>
   )
 }
 
