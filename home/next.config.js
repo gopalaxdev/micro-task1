@@ -5,7 +5,7 @@ const {TASK_URL} = process.env;
 //const router = useRouter();
 //console.log(router.query)
 module.exports = {
-  reactStrictMode: true,
+ // reactStrictMode: true,
   async rewrites() {
     return [
       {
