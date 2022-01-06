@@ -4,10 +4,10 @@ import {useRouter} from 'next/router';
 const Task = () => {
     const router = useRouter();
 
-    console.log(router.query);
+    console.log(router.query.id);
     return (
         <div>
-            Task
+            Task {router.query.id}
         </div>
     )
 }
