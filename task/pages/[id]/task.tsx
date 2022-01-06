@@ -9,7 +9,10 @@ const Task = () => {
     console.log(router.query.id);
     useEffect(() => {
         setId(queryId)
+        console.log('id use', id);
     }, [])
+
+    console.log('id', id)
     return (
         <div>
             Task {id}
