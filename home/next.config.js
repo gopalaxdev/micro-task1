@@ -17,8 +17,8 @@ module.exports = {
         destination: `${TASK_URL}/`,
       },
       {
-        source: '/:id*/task',
-        destination: `${TASK_URL}/:id*/task`,
+        source: '/task/:path*',
+        destination: `${TASK_URL}/task/:path*`,
       },
     ]
   },
@@ -37,3 +37,8 @@ module.exports = {
 // try on local - local.env
 
 // reverse proxy ngnix
+
+// Component library - deployable on bit
+// check to directly use ui components
+// should be tailwind driven 
+// theme - shell app 
