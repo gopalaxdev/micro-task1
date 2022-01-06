@@ -13,6 +13,24 @@ module.exports = {
         source: '/task',
         destination: `${TASK_URL}/`,
       },
+      {
+        source: '/:id/task',
+        destination: `${TASK_URL}/:id/task`,
+      },
     ]
   },
 }
+
+
+//Menu - company1 / cmp2 / 
+// on company -  link to task -  //Task Component - /:id
+
+// Cookies
+// JWT token 
+// URl 
+
+// Cookie from 1st to 2nd - Server side props
+
+// try on local - local.env
+
+// reverse proxy ngnix
