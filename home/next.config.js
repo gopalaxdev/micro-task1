@@ -4,6 +4,7 @@ const {TASK_URL} = process.env;
 
 //const router = useRouter();
 //console.log(router.query)
+console.log('TASK URL: ', TASK_URL)
 module.exports = {
  // reactStrictMode: true,
   async rewrites() {
@@ -14,7 +15,7 @@ module.exports = {
       },
       {
         source: '/task',
-        destination: `${TASK_URL}/`,
+        destination: `${TASK_URL}/task`,
       },
       {
         source: '/task/:path*',
