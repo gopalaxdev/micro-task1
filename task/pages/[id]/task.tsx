@@ -10,7 +10,7 @@ const Task = () => {
     useEffect(() => {
         setId(queryId)
         console.log('id use', id);
-    }, [])
+    }, [queryId])
 
     console.log('id', id)
     return (
