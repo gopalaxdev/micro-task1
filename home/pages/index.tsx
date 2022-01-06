@@ -8,7 +8,7 @@ const Home: NextPage = () => {
     <div>
     <p>This is our homepage</p>
     <div>
-      <a href="/task">Task</a>
+      <Link href="/task">Task</Link>
     </div>
     <Image
       src="/static/nextjs.png"
