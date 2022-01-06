@@ -15,7 +15,7 @@ const Task = () => {
     console.log('id', id)
     return (
         <div>
-            Task {id}
+            Task {id} - {queryId} - {router.query.id}
         </div>
     )
 }
