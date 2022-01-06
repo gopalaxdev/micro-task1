@@ -1,9 +1,9 @@
 /** @type {import('next').NextConfig} */
 const {TASK_URL} = process.env;
-import {useRouter} from 'next/router';
+//import {useRouter} from 'next/router';
 
-const router = useRouter();
-console.log(router.query)
+//const router = useRouter();
+//console.log(router.query)
 module.exports = {
   reactStrictMode: true,
   async rewrites() {
@@ -17,8 +17,8 @@ module.exports = {
         destination: `${TASK_URL}/`,
       },
       {
-        source: '/:id/task',
-        destination: `${TASK_URL}/:id/task`,
+        source: '/:id*/task',
+        destination: `${TASK_URL}/:id*/task`,
       },
     ]
   },
